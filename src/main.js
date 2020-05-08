@@ -4,9 +4,9 @@ import 'lib-flexible/flexible'
 
 import router from './router';
 import store from './store'
-import ajax from './http'
+import http from './http'
 Vue.config.productionTip = false
-Vue.prototype.$http = ajax
+Vue.prototype.$http = http
 new Vue({
   store,
   router,

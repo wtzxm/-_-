@@ -1,4 +1,4 @@
-import ajax from '../../http'
+import http from '../../http'
 import {
 	CHANGEINDEXDATA
 } from '../mutation-type'
@@ -14,9 +14,8 @@ const mutations = {
 
 const actions = {
 	async getIndexData({commit}){
-		console.log("++++++")
 		// 异步行为： 发送请求获取数据
-		let indexData = await ajax.index.getIndexData()
+		let indexData = await http.index.getIndexData()
 		commit(CHANGEINDEXDATA, indexData)
 	}
 }

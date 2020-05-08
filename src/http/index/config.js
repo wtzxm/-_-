@@ -8,5 +8,15 @@ export default {
       method: "get",
       corsUrl: "/9999"
     },
+    getCateGoryData: {
+      url: "/getCateGorysListData",
+      method: "get",
+      corsUrl: "/9999"
+    },
+    getCateListData: {
+      url: "/getIndexCateListData",
+      method: "get",
+      corsUrl: "/9999"
+    },
   }
 };
